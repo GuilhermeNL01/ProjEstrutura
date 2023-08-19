@@ -1,17 +1,28 @@
-# ProjEstrutura - Projeto To-Do List em C
+# 🏠 Gerenciamento de Serviços de Manutenção Residencial
 
-Este é um projeto simples de uma Lista de Tarefas (To-Do List) implementado em linguagem C. O programa permite aos usuários adicionar tarefas, marcar tarefas como concluídas e visualizar a lista de tarefas.
+Um projeto de estrutura de dados em C para gerenciar serviços de manutenção residencial, onde consumidores podem solicitar diversos tipos de serviços oferecidos por prestadores.
 
-## Funcionalidades
+## ℹ️ Descrição
 
-O programa oferece as seguintes funcionalidades:
+Este projeto visa criar um sistema interativo para cadastrar, listar e gerenciar informações relacionadas a prestadores de serviço, consumidores e tipos de serviços de manutenção residencial.
 
-1. ➕ **Adicionar Tarefa:** Permite ao usuário adicionar uma nova tarefa à lista, inserindo uma descrição.
-2. ✅ **Marcar Tarefa como Concluída:** Permite ao usuário marcar uma tarefa como concluída, alterando seu status.
-3. 📋 **Listar Todas as Tarefas:** Exibe todas as tarefas presentes na lista, mostrando suas descrições e status.
-4. ✅ **Listar Tarefas Concluídas:** Exibe somente as tarefas que foram marcadas como concluídas.
-5. ⏱️ **Listar Tarefas Pendentes:** Exibe somente as tarefas que ainda não foram concluídas.
-6. ❌ **Sair do Programa:** Encerra a execução do programa.
+## 🚀 Funcionalidades
+
+- Cadastro de Prestadores de Serviço 🛠️
+- Cadastro de Consumidores 🏡
+- Cadastro de Serviços 💼
+- Listagem de Tipos de Serviços 📋
+- Listagem de Consumidores 📞
+- Listagem de Prestadores de Serviço 🧑‍🔧
+- Listagem de Consumidores por Estado 🏠
+- Listagem de Prestadores por Tipo de Serviço 🔧
+- Estado(s) do Serviço Mais Caro 💰
+- Listagem de Serviços por Valor Crescente 💱
+- Listagem de Consumidores por Nome Crescente 📇
+
+## 🛠️ Tecnologias Utilizadas
+
+- Linguagem: C
 
 ## Participantes do projeto
 
