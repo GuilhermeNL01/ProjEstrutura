@@ -22,7 +22,8 @@ Este projeto visa criar um sistema interativo para cadastrar, listar e gerenciar
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Linguagem: C
+- Linguagens: C e Java
+
 
 ## Participantes do projeto
 
