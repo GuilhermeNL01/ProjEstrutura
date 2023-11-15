@@ -268,7 +268,7 @@ void encontrarEstadoServicoMaisCaro(PrestadorServico prestadores[], int numPrest
 // Função para listar tipos de serviços por valor crescente
 void listarTiposServicosPorValorCrescente(TipoServico tiposServicos[], int numTiposServicos)
 {
-    // Ordenar os tipos de serviços por valor crescente (pode usar bubble sort)
+    // Ordenar os tipos de serviços por valor crescente 
     for (int i = 0; i < numTiposServicos - 1; i++)
     {
         for (int j = 0; j < numTiposServicos - i - 1; j++)
@@ -293,7 +293,7 @@ void listarTiposServicosPorValorCrescente(TipoServico tiposServicos[], int numTi
 // Função para listar consumidores por nome crescente
 void listarConsumidoresPorNomeCrescente(Consumidor consumidores[], int numConsumidores)
 {
-    // Ordenar os consumidores por nome crescente (pode usar bubble sort)
+    // Ordenar os consumidores por nome crescente 
     for (int i = 0; i < numConsumidores - 1; i++)
     {
         for (int j = 0; j < numConsumidores - i - 1; j++)
