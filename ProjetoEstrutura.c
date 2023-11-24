@@ -58,27 +58,35 @@ void cadastrarPrestador(PrestadorServico prestadores[], int *numPrestadores, Tip
         PrestadorServico novoPrestador;
 
         printf("Nome: ");
-        scanf("%s", novoPrestador.nome);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoPrestador.nome);
 
         printf("Idade: ");
+        fflush(stdin); // Limpa o buffer
         scanf("%d", &novoPrestador.idade);
 
         printf("Email: ");
-        scanf("%s", novoPrestador.email);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoPrestador.email);
 
         printf("Telefone: ");
-        scanf("%s", novoPrestador.telefone);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoPrestador.telefone);
 
         printf("Endereço: ");
-        scanf("%s", novoPrestador.endereco);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoPrestador.endereco);
 
         printf("UF: ");
-        scanf("%s", novoPrestador.uf);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoPrestador.uf);
 
         printf("Tipo de Serviço: ");
-        scanf("%s", novoPrestador.tipo_servico);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoPrestador.tipo_servico);
 
         printf("Preço do Serviço: ");
+        fflush(stdin); // Limpa o buffer
         scanf("%lf", &novoPrestador.preco_servico);
 
         prestadores[*numPrestadores] = novoPrestador;
@@ -110,22 +118,28 @@ void cadastrarConsumidor(Consumidor consumidores[], int *numConsumidores)
         Consumidor novoConsumidor;
 
         printf("Nome: ");
-        scanf("%s", novoConsumidor.nome);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoConsumidor.nome);
 
         printf("Idade: ");
+        fflush(stdin); // Limpa o buffer
         scanf("%d", &novoConsumidor.idade);
 
         printf("Email: ");
-        scanf("%s", novoConsumidor.email);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoConsumidor.email);
 
         printf("Telefone: ");
-        scanf("%s", novoConsumidor.telefone);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoConsumidor.telefone);
 
         printf("Endereço: ");
-        scanf("%s", novoConsumidor.endereco);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoConsumidor.endereco);
 
         printf("UF: ");
-        scanf("%s", novoConsumidor.uf);
+        fflush(stdin); // Limpa o buffer
+        scanf("%[^\n]s", novoConsumidor.uf);
 
         consumidores[*numConsumidores] = novoConsumidor;
         (*numConsumidores)++;
@@ -268,7 +282,7 @@ void encontrarEstadoServicoMaisCaro(PrestadorServico prestadores[], int numPrest
 // Função para listar tipos de serviços por valor crescente
 void listarTiposServicosPorValorCrescente(TipoServico tiposServicos[], int numTiposServicos)
 {
-    // Ordenar os tipos de serviços por valor crescente 
+    // Ordenar os tipos de serviços por valor crescente
     for (int i = 0; i < numTiposServicos - 1; i++)
     {
         for (int j = 0; j < numTiposServicos - i - 1; j++)
@@ -293,7 +307,7 @@ void listarTiposServicosPorValorCrescente(TipoServico tiposServicos[], int numTi
 // Função para listar consumidores por nome crescente
 void listarConsumidoresPorNomeCrescente(Consumidor consumidores[], int numConsumidores)
 {
-    // Ordenar os consumidores por nome crescente 
+    // Ordenar os consumidores por nome crescente
     for (int i = 0; i < numConsumidores - 1; i++)
     {
         for (int j = 0; j < numConsumidores - i - 1; j++)
@@ -356,7 +370,6 @@ int main()
         case 1:
             cadastrarPrestador(prestadores, &numPrestadores, tiposServicos, &numTiposServicos);
             break;
-
         case 2:
             cadastrarConsumidor(consumidores, &numConsumidores);
             break;
@@ -373,6 +386,7 @@ int main()
         {
             char estado[3];
             printf("Digite o UF do estado: ");
+            fflush(stdin); // Limpa o buffer
             scanf("%s", estado);
             listarConsumidoresPorEstado(consumidores, numConsumidores, estado);
         }
@@ -381,7 +395,8 @@ int main()
         {
             char tipoServico[50];
             printf("Digite o tipo de serviço: ");
-            scanf("%s", tipoServico);
+            fflush(stdin); // Limpa o buffer
+            scanf("%[^\n]s", tipoServico);
             listarPrestadoresPorTipoServico(prestadores, numPrestadores, tipoServico);
         }
         break;
